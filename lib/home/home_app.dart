@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'basic/basic_animation.dart';
+import 'coffe_challanger/coffe_onboard.dart';
 import 'curves/curves_animation.dart';
 
 class HomeApp extends StatefulWidget {
@@ -25,6 +26,10 @@ class _HomeAppState extends State<HomeApp> {
             AnimationButton(
               text: 'Curved Animation',
               page: CurvesAnimation(),
+            ),
+            AnimationButton(
+              text: 'Coffe Challange - Diego Developer',
+              page: CoffeOnboard(),
             ),
           ],
         ),
