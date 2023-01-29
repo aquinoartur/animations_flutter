@@ -60,6 +60,7 @@ class _TweenAnimationBuilderExampleOneState extends State<TweenAnimationBuilderE
           const SizedBox(height: 30),
           TweenAnimationBuilder<double>(
             tween: Tween(begin: 1.0, end: 0.0),
+            curve: Curves.elasticInOut,
             duration: const Duration(seconds: 2),
             child: const Center(
               child: Padding(
