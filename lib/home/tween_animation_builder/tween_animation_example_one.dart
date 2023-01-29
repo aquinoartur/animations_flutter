@@ -44,7 +44,7 @@ class _TweenAnimationBuilderExampleOneState extends State<TweenAnimationBuilderE
               child: Transform.rotate(
                 angle: 3 * pi / 2,
                 child: FlutterLogo(
-                  textColor: Colors.green,
+                  style: FlutterLogoStyle.stacked,
                   size: size.height * 0.2,
                 ),
               ),
@@ -84,14 +84,14 @@ class _TweenAnimationBuilderExampleOneState extends State<TweenAnimationBuilderE
       ),
       floatingActionButton: Column(
         mainAxisAlignment: MainAxisAlignment.end,
-        children: const [
-          AnimationButton(
+        children: [
+          const AnimationButton(
             text: 'Example 2',
             page: TweenAnimationBuilderExampleTwo(),
           ),
           AnimationButton(
             text: 'Example 3',
-            page: TweenAnimationBuilderExampleTwo(),
+            page: Container(),
           ),
         ],
       ),
