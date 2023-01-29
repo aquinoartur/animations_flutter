@@ -1,7 +1,7 @@
+import 'package:animations_flutter/home/coffee_challenger/coffee_onboard.dart';
 import 'package:flutter/material.dart';
 
 import 'basic/basic_animation.dart';
-import 'coffe_challanger/coffe_onboard.dart';
 import 'curves/curves_animation.dart';
 
 class HomeApp extends StatefulWidget {
@@ -15,9 +15,14 @@ class _HomeAppState extends State<HomeApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          'My animation studies',
+          style: TextStyle(fontFamily: "Sunshine"),
+        ),
+      ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: ListView(
           children: const [
             AnimationButton(
               text: 'Basic Animation',
@@ -29,7 +34,7 @@ class _HomeAppState extends State<HomeApp> {
             ),
             AnimationButton(
               text: 'Coffe Challange - Diego Developer',
-              page: CoffeOnboard(),
+              page: CoffeeOnboard(),
             ),
           ],
         ),
