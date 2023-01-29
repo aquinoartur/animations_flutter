@@ -1,7 +1,7 @@
 import 'package:animations_flutter/home/coffee_challenger/coffe_model/coffee.dart';
 import 'package:flutter/material.dart';
 
-import 'coffe_model/coffee_list.dart';
+import 'coffee_list.dart';
 
 class CoffeeDetails extends StatelessWidget {
   final Coffee coffee;

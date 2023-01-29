@@ -1,4 +1,5 @@
 import 'package:animations_flutter/home/coffee_challenger/coffee_onboard.dart';
+import 'package:animations_flutter/home/tween_animation_builder/tween_animation_example_one.dart';
 import 'package:flutter/material.dart';
 
 import 'basic/basic_animation.dart';
@@ -31,6 +32,10 @@ class _HomeAppState extends State<HomeApp> {
             AnimationButton(
               text: 'Curved Animation',
               page: CurvesAnimation(),
+            ),
+            AnimationButton(
+              text: 'Tween Animation Builder',
+              page: TweenAnimationBuilderExampleOne(),
             ),
             AnimationButton(
               text: 'Coffe Challange - Diego Developer',
